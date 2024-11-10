@@ -1,5 +1,5 @@
 show_debug_overlay(true);
-current_angle = 1;
+current_angle = 16;
 max_angle = 32;
 angle_size = 360/max_angle;
 turn_speed = 0.5;
@@ -16,7 +16,11 @@ depth = 50;
 walk_speed = 4;
 alarm[0] = 120;
 
-
+right = 0;
+left = 0;
+up = 0;
+down = 0;
+flash = 0;
 
 
 

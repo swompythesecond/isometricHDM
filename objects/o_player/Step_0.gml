@@ -1,9 +1,3 @@
-right = keyboard_check(ord("D"));
-left = keyboard_check(ord("A"));
-up = keyboard_check(ord("W"));
-down = keyboard_check(ord("S"));
-
-space = keyboard_check_pressed(vk_space);
 
 if left {
     current_angle += turn_speed;
@@ -20,7 +14,7 @@ if current_angle < 1 {
     current_angle += max_angle;
 }
 
-if space && flash_cd <= 0{
+if flash && flash_cd <= 0{
 	flash_cd = 60;
 	instance_create_depth(x,y,depth,o_flash);
 	x += lengthdir_x(flash_strength, (current_angle - 1) * angle_size - 85);
